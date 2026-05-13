@@ -1,4 +1,4 @@
-# Digital Clock - Basys3
+# Digital Clock DEC Project
 
 ## Features:
 - Display current time in HH:MM:SS format on seven-segment displays
