@@ -1,5 +1,10 @@
 # Digital Clock DEC Project
 
+## Demo
+[![Watch the demo](https://img.youtube.com/vi/vMbcKwL5xt4/0.jpg)](https://www.youtube.com/playlist?list=PL8TAmlTnt1M9XmpB4Xc3X9jTW3SgLloRu)
+
+> Click the thumbnail above to watch the full demo playlist
+
 ## Features:
 - Display current time in HH:MM:SS format on seven-segment displays
 - Synchronous reset to set time back to 00:00:00 for each mode
@@ -9,6 +14,19 @@
 - Different set of modes for clock (00), alarm (01), stopwatch (10) and timer (11)
 - Dynamic Light effect for alert at alarm and countdown trigger
 - Toggle between time format (HH:MM, SS) and (MM:SS, CS) as per mode
+
+## Technical Implementation
+- 100MHz master clock divided down to 1Hz using custom clock divider
+- Multiplexed 4-digit 7-segment display with optimized refresh rate 
+  to eliminate display artifacts
+- Synchronous switch sampling naturally filters mechanical bounce
+- Johnson ring counter for dynamic LED alert effects
+- FSM based mode switching (Clock/Alarm/Stopwatch/Timer)
+
+## Tools Used
+- Vivado Design Suite
+- Basys 3 FPGA Board (Artix-7)
+- Verilog HDL
 
 ## Controls:
 
