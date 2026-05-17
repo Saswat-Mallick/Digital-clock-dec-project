@@ -5,6 +5,9 @@
 
 > Click the thumbnail above to watch the full demo playlist
 
+## Overview
+An FPGA-based multi-function digital time processor implemented on Basys 3 (Artix-7) using Verilog HDL. The system concurrently supports four modes — Clock, Alarm, Stopwatch and Timer — displayed on a multiplexed 4-digit 7-segment display, with dynamic LED alerts and user-controlled mode switching via onboard switches and buttons.
+
 ## Features:
 - Display current time in HH:MM:SS format on seven-segment displays
 - Synchronous reset to set time back to 00:00:00 for each mode
